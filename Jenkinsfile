@@ -10,6 +10,7 @@ pipeline {
         echo "${TEST_USER_PSW}"
         sh 'java -version'
       }
+    }
     stage('Testing') {
       failFast true
       parallel {
